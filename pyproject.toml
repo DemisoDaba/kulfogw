@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kulfo"
+version = "0.1.0"
+description = "30 m spatial groundwater anomaly mapping for the Kulfo Watershed"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "rasterio", "matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["."]
