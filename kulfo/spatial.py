@@ -62,7 +62,7 @@ def spatial_gw_value(latitude, longitude):
 
 
 def spatial_gw_interpret(latitude, longitude):
-    """Interpret the spatial groundwater condition at a location."""
+    """Interpret the predicted groundwater-storage anomaly."""
 
     value = spatial_gw_value(latitude, longitude)
 
@@ -70,18 +70,55 @@ def spatial_gw_interpret(latitude, longitude):
         return "No groundwater prediction available at this location."
 
     if value > 0:
-        return (
-            "Groundwater condition: Higher predicted groundwater storage\n"
-            "Reference condition: Defined model reference"
-        )
+        if value <= 1:
+            return (
+                f"Anomaly value: +{value:.4f}\n"
+                "Interpretation: Positive groundwater-storage anomaly, "
+                "indicating groundwater storage is above the reference "
+                "condition at this location. The value is within the "
+                "-1 to +1 near-reference range."
+            )
+        elif value <= 2:
+            return (
+                f"Anomaly value: +{value:.4f}\n"
+                "Interpretation: Positive groundwater-storage anomaly, "
+                "indicating higher groundwater storage at this location. "
+                "The value falls within the +1 to +2 higher-storage range."
+            )
+        else:
+            return (
+                f"Anomaly value: +{value:.4f}\n"
+                "Interpretation: Strong positive groundwater-storage "
+                "anomaly, indicating substantially higher groundwater "
+                "storage at this location."
+            )
 
     if value < 0:
-        return (
-            "Groundwater condition: Lower predicted groundwater storage\n"
-            "Reference condition: Defined model reference"
-        )
+        if value >= -1:
+            return (
+                f"Anomaly value: {value:.4f}\n"
+                "Interpretation: Negative groundwater-storage anomaly, "
+                "indicating groundwater storage is below the reference "
+                "condition at this location. The value is within the "
+                "-1 to +1 near-reference range."
+            )
+        elif value >= -2:
+            return (
+                f"Anomaly value: {value:.4f}\n"
+                "Interpretation: Negative groundwater-storage anomaly, "
+                "indicating lower groundwater storage at this location. "
+                "The value falls within the -2 to -1 depletion range."
+            )
+        else:
+            return (
+                f"Anomaly value: {value:.4f}\n"
+                "Interpretation: Strong negative groundwater-storage "
+                "anomaly, indicating substantially lower groundwater "
+                "storage at this location."
+            )
 
     return (
-        "Groundwater condition: Close to the reference condition\n"
-        "Reference condition: Defined model reference"
+        "Anomaly value: 0.0000\n"
+        "Interpretation: Groundwater-storage anomaly is approximately "
+        "zero, indicating a condition close to the reference condition."
     )
