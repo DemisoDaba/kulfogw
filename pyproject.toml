@@ -12,3 +12,6 @@ dependencies = ["numpy", "rasterio", "matplotlib"]
 
 [tool.setuptools.packages.find]
 where = ["."]
+
+[tool.setuptools.package-data]
+kulfo = ["data/*.tif", "figures/*.png", "metadata/*.json"]
