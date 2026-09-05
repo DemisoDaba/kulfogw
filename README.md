@@ -108,6 +108,15 @@ kulfo/figures/spatial_validation/
 └── uncertainty_metrics.csv
 ```
 
+## Installation
+
+Install the latest development version directly from GitHub:
+
+```text
+pip install git+https://github.com/DemisoDaba/kulfogw.git
+```
+
+
 ## Main Functions
 
 ```python
@@ -135,12 +144,7 @@ kulfo.spatial_validation
 # Uncertainty assessment
 kulfo.uncertainty_assessment
 ```
-## Installation
 
-Install the latest development version directly from GitHub:
-
-```bash
-pip install git+https://github.com/DemisoDaba/kulfogw.git
 
 ## Coming Soon
 
