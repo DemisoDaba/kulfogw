@@ -113,8 +113,26 @@ kulfo/figures/spatial_validation/
 ```python
 import kulfo
 
+# Spatial groundwater analysis
 kulfo.spatial_gw_value
+kulfo.spatial_gw_interpret
+
+# Groundwater mapping
+kulfo.spatial_gw_map
+
+# Groundwater zones
+kulfo.spatial_gw_zones
+kulfo.spatial_gw_zones_map
+kulfo.spatial_gw_zones_interpret
+
+# Groundwater hotspots
+kulfo.spatial_gw_hotspots
+kulfo.spatial_gw_hotspot_interpret
+
+# Spatial validation
 kulfo.spatial_validation
+
+# Uncertainty assessment
 kulfo.uncertainty_assessment
 ```
 
