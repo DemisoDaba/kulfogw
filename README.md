@@ -115,7 +115,11 @@ Install the latest development version directly from GitHub:
 ```text
 pip install git+https://github.com/DemisoDaba/kulfogw.git
 ```
+Install on colab from github
 
+```text
+!pip install git+https://github.com/DemisoDaba/kulfogw.git
+```
 
 ## Main Functions
 
