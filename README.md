@@ -1,4 +1,4 @@
-````markdown
+
 # Kulfo Spatial Groundwater Analysis Package
 
 An open-source geospatial and AI framework for groundwater analysis in the **Kulfo Watershed, southern Ethiopia**.
@@ -136,22 +136,3 @@ Planned capabilities include:
 
 > **Temporal groundwater modelling: Coming Soon**
 
-```
-```
-Coming Soon
-Temporal Groundwater Analysis
-
-The temporal component is coming soon.
-
-The next stage will extend the current spatial framework toward temporal groundwater monitoring and prediction using time-series data and AI-based temporal modelling.
-
-Planned capabilities include:
-
-Groundwater time-series analysis
-Location-specific temporal trends
-Groundwater fluctuation prediction
-Temporal depletion and recharge detection
-Integration of spatial and temporal groundwater information
-```
-Temporal groundwater modelling: Coming Soon
-```
