@@ -135,6 +135,12 @@ kulfo.spatial_validation
 # Uncertainty assessment
 kulfo.uncertainty_assessment
 ```
+## Installation
+
+Install the latest development version directly from GitHub:
+
+```bash
+pip install git+https://github.com/DemisoDaba/kulfogw.git
 
 ## Coming Soon
 
