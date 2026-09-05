@@ -9,4 +9,8 @@ from .hotspots import (
     spatial_gw_hotspot_interpret,
 )
 
+from .spatial_validation import spatial_validation
+from .uncertainty import uncertainty_assessment
+
 __version__ = "0.1.0"
+

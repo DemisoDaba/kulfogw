@@ -8,10 +8,22 @@ version = "0.1.0"
 description = "30 m spatial groundwater anomaly mapping for the Kulfo Watershed"
 readme = "README.md"
 requires-python = ">=3.9"
-dependencies = ["numpy", "rasterio", "matplotlib"]
+dependencies = [
+    "numpy",
+    "rasterio",
+    "matplotlib",
+    "pandas",
+    "geopandas",
+    "scikit-learn",
+]
 
-[tool.setuptools.packages.find]
-where = ["."]
+[tool.setuptools]
+packages = ["kulfo"]
 
 [tool.setuptools.package-data]
-kulfo = ["data/*.tif", "figures/*.png", "metadata/*.json"]
+kulfo = [
+    "data/*.tif",
+    "data/*.gpkg",
+    "figures/*.png",
+    "metadata/*.json",
+]

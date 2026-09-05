@@ -1,0 +1,12 @@
+Metric,Value
+Number of boreholes,25.0
+Valid comparisons,24.0
+U-Net NoData points,1.0
+MAE,3.2498279632859846
+RMSE,4.049180803351943
+Bias,-0.061222867682577974
+Maximum absolute error,8.069326124600746
+Residual standard deviation,4.135797102756869
+Within ±1 anomaly unit (%),25.0
+Within ±2 anomaly units (%),37.5
+Within ±5 anomaly units (%),75.0

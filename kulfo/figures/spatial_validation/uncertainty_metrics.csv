@@ -1,0 +1,15 @@
+Metric,Value
+Valid borehole comparisons,24.0
+Mean residual,0.061222867682577974
+Residual standard deviation,4.135797102756869
+MAE,3.2498279632859846
+RMSE,4.049180803351943
+Standard error of mean residual,0.8442160484529447
+95% uncertainty lower bound,-8.044939453720886
+95% uncertainty upper bound,8.16738518908604
+95% absolute error percentile,7.250344905791504
+95% CI lower bound for mean residual,-1.5934405872851938
+95% CI upper bound for mean residual,1.7158863226503496
+Within ±1 anomaly unit (%),25.0
+Within ±2 anomaly units (%),37.5
+Within ±5 anomaly units (%),75.0
